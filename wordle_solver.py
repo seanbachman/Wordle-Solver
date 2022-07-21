@@ -44,7 +44,7 @@ for i in range(6):
     sorted_guesses = sorted(word_scores.items(), key=lambda x: x[1], reverse=True)
     guess = sorted_guesses[0][0]
     if len(dictionary) <= 10:
-        print(dictionary)
+        print("Possible words: ", dictionary)
     else:
         print("Possible words: ", len(dictionary))
     print("Guess: ", guess, "probability = ", word_scores[guess] / sum(word_scores.values()) * 100)

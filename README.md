@@ -1,8 +1,10 @@
 # Wordle-Solver
-Python code to solve wordle
+A small python project to algorithmically sovle the wordle!
 
-![alt text](wordle.jpg)
+## Requirements
+- Python 3
 
+## Set up
 1. Use your operating system's package manager to install Python 3 (if not already installed)
 2. Copy the Wordle-Solver to your machine: `git clone https://github.com/seanbachman/Wordle-Solver.git`
 3. Run this command in the directory you just cloned: `python3 wordle_solver.py`
@@ -16,6 +18,7 @@ Possible words:  41
 Guess:  angle probability =  2.660201808413052
 Enter results (g for green, y for yellow, b for black) in order:
 ```
+![alt text](wordle.jpg)
 
 ## List of top first guesses along with their ranking
 1 stare

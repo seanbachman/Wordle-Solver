@@ -1,6 +1,6 @@
 # Wordle-Solver
 Python code to solve wordle
----
+
 ![alt text](wordle.jpg)
 
 1. Use your operating system's package manager to install Python 3 (if not already installed)

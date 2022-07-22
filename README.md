@@ -7,8 +7,10 @@ A small python project to algorithmically sovle the wordle!
 ## Set up
 1. Use your operating system's package manager to install Python 3 (if not already installed)
 2. Copy the Wordle-Solver to your machine: `git clone https://github.com/seanbachman/Wordle-Solver.git`
-3. Run this command in the directory you just cloned: `python3 wordle_solver.py`
-4. Follow the command prompts that are displayed.  For example, enter the word *stare* into Wordle as your first guess.  Enter *bbybg* into the script according to the results shown in Wordle.  Continue this pattern until the game is over. 
+
+## Usage
+1. Run this command in the directory you just cloned: `python3 wordle_solver.py`
+2. Follow the command prompts that are displayed.  For example, enter the word *stare* into Wordle as your first guess.  Enter *bbybg* into the script according to the results shown in Wordle.  Continue this pattern until the game is over. 
 
 ```
 Possible words:  2315

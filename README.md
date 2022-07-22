@@ -1,6 +1,22 @@
 # Wordle-Solver
 Python code to solve wordle
 
+![alt text](wordle.jpg)
+
+1. Use your operating system's package manager to install Python 3 (if not already installed)
+2. Copy the Wordle-Solver to your machine: `git clone https://github.com/seanbachman/Wordle-Solver.git`
+3. Run this command in the directory you just cloned: `python3 wordle_solver.py`
+4. Follow the command prompts that are displayed.  For example, enter the word *stare* into Wordle as your first guess.  Enter *bbybg* into the script according to the results shown in Wordle.  Continue this pattern until the game is over. 
+
+```
+Possible words:  2315
+Guess:  stare probability =  0.0640658739919232
+Enter results (g for green, y for yellow, b for black) in order: bbybg
+Possible words:  41
+Guess:  angle probability =  2.660201808413052
+Enter results (g for green, y for yellow, b for black) in order:
+```
+
 ## List of top first guesses along with their ranking
 1 stare
 2 arose

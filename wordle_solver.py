@@ -52,7 +52,7 @@ for i in range(6):
     # the guess word is printed in green using a color code
     # see this link for a full table of color codes: https://stackoverflow.com/a/21786287     
     print("Guess: " + '\x1b[6;30;42m' + guess +  '\x1b[0m')
-    print("probability = ", str("{:.2f}".format(word_scores[guess] / sum(word_scores.values()) * 100)) + "%")
+    print("Probability: ", str("{:.2f}".format(word_scores[guess] / sum(word_scores.values()) * 100)) + "%")
     result = input("Enter results (g for green, y for yellow, b for black) in order: ")
     result = result[0:5] # trim off newline
 

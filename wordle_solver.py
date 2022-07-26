@@ -25,7 +25,19 @@ for i in range(6):
             if word[i] not in position_frequency[i]:
                 position_frequency[i][word[i]] = 0
             position_frequency[i][word[i]] += 1
-
+    # count double letter and triple letters
+    double_letter_count = {}
+    triple_letter_count = {}
+    for word in dictionary:
+        if (len(set(word)) < 5):
+            for char in set(word):
+                if char not in double_letter_count or triple_letter_count:
+                    double_letter_count[char] = 0
+                    triple_letter_count[char] = 0
+                if word.count(char) == 2:
+                    double_letter_count[char] += 1
+                elif word.count(char) == 3:
+                    triple_letter_count[char] += 1
     # assign a weight to each word
     # weight is based upon total letter frequency and also positional letter frequency
     # aims to guess the word that will reduce the dictionary the most after the guess is complete
@@ -35,6 +47,10 @@ for i in range(6):
             score += position_frequency[i][word[i]]
         for char in set(word): # increase score for letter frequency
             score += letter_frequency[char]
+        if (len(set(word)) < 5):
+            for char in set(word):
+                score += double_letter_count[char]
+                score += triple_letter_count[char]
         return score
     word_scores = {
         word: calculate_score(word)
